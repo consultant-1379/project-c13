@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Board</title>
+</head>
+<body>
+  <h3>Retrospectives</h3>
+  <div th:each="retrospective : ${retrospectives}" class="thumbnail col-xs-6 col-md-4 col-lg-3">
+    <td th:text="${retrospective.name}"/>
+  </div>
+  <h3>Teams</h3>
+  <div th:each="team : ${teams}" class="thumbnail col-xs-6 col-md-4 col-lg-3">
+    <td th:text="${team.name}"/>
+  </div>
+</body>
+</html>
